@@ -9,6 +9,11 @@ set up, down at the bottom in the Project panel, click on Assets in the file tre
 mouse click with the cursor in the right side of the Project panel to get a menu and then click on Import Package -> Custom Package and navigate to where you 
 saved the TeleportalsVRForest custom asset.  Double click that file to get the Import dialog and click on Import.
 
+After the asset has loaded, go to the Project panel and look in Assets -> Scenes.  Click Scenes, and you should see two scenes in the right side of the Project
+panel; ForestScene and SampleScene.  Double click ForestScene and see that ForestScene has replaced the Sample Scene in the Hierarchy panel.  You can click on 
+the Game tab in the center view panel to have a look at the simple forest scene, or you can look at it in the Scene view and move the perspective to the XR Origin
+by clicking on XR Origin in the Hierarchy panel.
+
 You will need to set up Layers in the Project.  Here is how I do it: Click on Terrain in the Hierarchy panel and then in the Inspector panel click on the Layer
 drop down menu.  Click on Add Layer... and add TestLayer as #3, RightEye as #6 and blank as #7.  Make sure the Layer selected for Terrain is TestLayer when 
 you are done adding Layers.  Click on XR Origin in Hierarchy and verify that the Layer selection in the Inspector panel is Default.  At the bottom of the 
