@@ -15,13 +15,13 @@ the Game tab in the center view panel to have a look at the simple forest scene,
 by clicking on XR Origin in the Hierarchy panel.
 
 You will need to set up Layers in the Project.  Here is how I do it: Click on Terrain in the Hierarchy panel and then in the Inspector panel click on the Layer
-drop down menu.  Click on Add Layer... and add TestLayer as #3, RightEye as #6 and blank as #7.  Make sure the Layer selected for Terrain is TestLayer when 
+drop down menu.  Click on Add Layer... and add TestLayer as #3, RightEye as #6 and LeftEye as #7.  Make sure the Layer selected for Terrain is TestLayer when 
 you are done adding Layers.  Click on XR Origin in Hierarchy and verify that the Layer selection in the Inspector panel is Default.  At the bottom of the 
 Inspector panel, verify that Layer Mask is set to TestLayer.
 
-Click on the dropdown caret for XR Origin in the Hierarchy panel and verify or set the Layer selection for portalQuadL is set to blank, and the Layer selection 
+Click on the dropdown caret for XR Origin in the Hierarchy panel and verify or set the Layer selection for portalQuadL is set to LeftEye, and the Layer selection 
 for portalQuadR is set to RightEye.  Click on the dropdown caret for Camera Offset and verify or set the Layer selection for portalParentL is set to RightEye,
-and portalParentR is set to blank.
+and portalParentR is set to LeftEye.
 
 You should be able to run the project and have a functional teleport capability working when you press the right controller A button.  A couple of things are 
 immediately apparent:
@@ -34,4 +34,6 @@ destination being brought to you", rather than "you being moved rapidly or sudde
 
 If I change portalQuadL Layer to RightEye the left eye shows the destination view in the portal ring as it approaches, and the right eye still shows the starting
 position view until the portal ring envelops the user, then jumps to the destination.  I have asked the authof of this Project to tell me how he has programmed
-the different cameras with Layer selections that produce a destination view in both eyes.  I have not heard back from him in almost a week.  -KJ
+the different cameras with Layer selections that produce a destination view in both eyes.
+
+I got an email as I was typing this.  The recommendation was to set portalQuadL to LeftEye, portalQuadR to RightEye, portalParentL to LeftEye, portalParentR to RightEye, MainCameraL to LeftEye and MainCameraR to RightEye.  I tried that but it just produced the correct view for the left eye and incorrect view for right eye again.
